@@ -1,3 +1,4 @@
+/*
 //
 //  RNPNotification.m
 //  ReactNativePermissions
@@ -68,3 +69,4 @@ static NSString* RNPDidAskForNotification = @"RNPDidAskForNotification";
 }
 
 @end
+*/

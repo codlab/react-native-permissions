@@ -1,3 +1,4 @@
+/*
 //
 //  RNPContacts.h
 //  ReactNativePermissions
@@ -15,3 +16,4 @@
 + (void)request:(void (^)(NSString *))completionHandler;
 
 @end
+*/

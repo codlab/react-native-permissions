@@ -1,3 +1,4 @@
+/*
 //
 //  RNPPhoto.m
 //  ReactNativePermissions
@@ -33,9 +34,10 @@
             completionHandler([self.class getStatus]);
         });
     };
-    
+
     [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus status){
         handler();
     }];
 }
 @end
+*/

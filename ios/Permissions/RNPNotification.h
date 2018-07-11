@@ -1,3 +1,4 @@
+/*
 //
 //  RNPNotification.h
 //  ReactNativePermissions
@@ -15,3 +16,4 @@
 - (void)request:(UIUserNotificationType)types completionHandler:(void (^)(NSString*))completionHandler;
 
 @end
+*/

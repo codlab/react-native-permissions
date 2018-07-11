@@ -1,3 +1,4 @@
+/*
 //
 //  RNPBackgroundRefresh.m
 //  ReactNativePermissions
@@ -26,3 +27,4 @@
 
 }
 @end
+*/

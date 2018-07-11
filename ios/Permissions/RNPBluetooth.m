@@ -1,3 +1,4 @@
+/*
 //
 //  RNPBluetooth.m
 //  ReactNativePermissions
@@ -34,10 +35,10 @@
 - (void)request:(void (^)(NSString *))completionHandler
 {
     NSString *status = [RNPBluetooth getStatus];
-    
+
     if (status == RNPStatusUndetermined) {
         self.completionHandler = completionHandler;
-        
+
         self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
         [self.peripheralManager startAdvertising:@{}];
     } else {
@@ -52,7 +53,7 @@
         self.peripheralManager.delegate = nil;
         self.peripheralManager = nil;
     }
-    
+
     if (self.completionHandler) {
         //for some reason, checking permission right away returns denied. need to wait a tiny bit
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
@@ -60,7 +61,8 @@
             self.completionHandler = nil;
         });
     }
-    
+
 }
 
 @end
+*/

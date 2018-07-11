@@ -1,3 +1,4 @@
+/*
 //
 //  RNPContacts.m
 //  ReactNativePermissions
@@ -51,8 +52,8 @@
             completionHandler([self.class getStatus]);
         });
     };
-    
-    
+
+
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_9_0
     CNContactStore *contactStore = [[CNContactStore alloc] init];
     [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:handler];
@@ -67,3 +68,4 @@
 }
 
 @end
+*/

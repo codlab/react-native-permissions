@@ -1,3 +1,4 @@
+/*
 //
 //  RNPCamera.m
 //  ReactNativePermissions
@@ -46,3 +47,4 @@
 }
 
 @end
+*/

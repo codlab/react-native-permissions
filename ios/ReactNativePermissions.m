@@ -35,7 +35,7 @@
 #endif
 
 #import "RNPLocation.h"
-#import "RNPBluetooth.h"
+/*#import "RNPBluetooth.h"
 #import "RNPNotification.h"
 #import "RNPAudioVideo.h"
 #import "RNPEvent.h"
@@ -44,13 +44,13 @@
 #import "RNPBackgroundRefresh.h"
 #import "RNPSpeechRecognition.h"
 #import "RNPMediaLibrary.h"
-#import "RNPMotion.h"
+#import "RNPMotion.h"*/
 
 
 @interface ReactNativePermissions()
 @property (strong, nonatomic) RNPLocation *locationMgr;
-@property (strong, nonatomic) RNPNotification *notificationMgr;
-@property (strong, nonatomic) RNPBluetooth *bluetoothMgr;
+//@property (strong, nonatomic) RNPNotification *notificationMgr;
+//@property (strong, nonatomic) RNPBluetooth *bluetoothMgr;
 @end
 
 @implementation ReactNativePermissions
@@ -118,7 +118,7 @@ RCT_REMAP_METHOD(getPermissionStatus, getPermissionStatus:(RNPType)type json:(id
             status = [RNPLocation getStatusForType:locationPermissionType];
             break;
         }
-        case RNPTypeCamera:
+        /*case RNPTypeCamera:
             status = [RNPAudioVideo getStatus:@"video"];
             break;
         case RNPTypeMicrophone:
@@ -153,7 +153,7 @@ RCT_REMAP_METHOD(getPermissionStatus, getPermissionStatus:(RNPType)type json:(id
             break;
         case RNPTypeMotion:
             status = [RNPMotion getStatus];
-            break;
+            break;*/
         default:
             break;
     }
@@ -168,7 +168,7 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
     switch (type) {
         case RNPTypeLocation:
             return [self requestLocation:json resolve:resolve];
-        case RNPTypeCamera:
+        /*case RNPTypeCamera:
             return [RNPAudioVideo request:@"video" completionHandler:resolve];
         case RNPTypeMicrophone:
             return [RNPAudioVideo request:@"audio" completionHandler:resolve];
@@ -189,7 +189,7 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
         case RNPTypeMediaLibrary:
             return [RNPMediaLibrary request:resolve];
         case RNPTypeMotion:
-            return [RNPMotion request:resolve];
+            return [RNPMotion request:resolve];*/
         default:
             break;
     }
@@ -208,7 +208,7 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
     [self.locationMgr request:type completionHandler:resolve];
 }
 
-- (void) requestNotification:(id)json resolve:(RCTPromiseResolveBlock)resolve
+/*- (void) requestNotification:(id)json resolve:(RCTPromiseResolveBlock)resolve
 {
     NSArray *typeStrings = [RCTConvert NSArray:json];
 
@@ -229,17 +229,17 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
 
     [self.notificationMgr request:types completionHandler:resolve];
 
-}
+}*/
 
 
-- (void) requestBluetooth:(RCTPromiseResolveBlock)resolve
+/*- (void) requestBluetooth:(RCTPromiseResolveBlock)resolve
 {
     if (self.bluetoothMgr == nil) {
         self.bluetoothMgr = [[RNPBluetooth alloc] init];
     }
 
     [self.bluetoothMgr request:resolve];
-}
+}*/
 
 
 

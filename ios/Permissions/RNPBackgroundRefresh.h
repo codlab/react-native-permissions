@@ -1,3 +1,4 @@
+/*
 //
 //  RNPBackgroundRefresh.h
 //  ReactNativePermissions
@@ -14,3 +15,4 @@
 + (NSString *)getStatus;
 
 @end
+*/

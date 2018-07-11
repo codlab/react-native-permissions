@@ -1,4 +1,4 @@
-//
+/*//
 //  RNPPhoto.m
 //  ReactNativePermissions
 //
@@ -41,3 +41,4 @@
     }];
 }
 @end
+*/

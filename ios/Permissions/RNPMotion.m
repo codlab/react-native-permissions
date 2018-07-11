@@ -1,3 +1,4 @@
+/*
 //
 //  RNPMotion.m
 //  ReactNativePermissions
@@ -13,10 +14,10 @@
     if (![CMMotionActivityManager isActivityAvailable]) {
         return RNPStatusRestricted;
     }
-    
+
     if (@available(iOS 11.0, *)) {
         CMAuthorizationStatus status = [CMMotionActivityManager authorizationStatus];
-        
+
         switch (status) {
             case CMAuthorizationStatusAuthorized:
                 return RNPStatusAuthorized;
@@ -37,7 +38,7 @@
 + (void)request:(void (^)(NSString *))completionHandler
 {
     __block NSString *status = [RNPMotion getStatus];
-    
+
     if ([status isEqual: RNPStatusUndetermined]) {
         __block CMMotionActivityManager *activityManager = [[CMMotionActivityManager alloc] init];
         __block NSOperationQueue *motionActivityQueue = [[NSOperationQueue alloc] init];
@@ -47,11 +48,11 @@
             } else if (activities || !error) {
                 status = RNPStatusAuthorized;
             }
-            
+
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(status);
             });
-            
+
             activityManager = nil;
             motionActivityQueue = nil;
         }];
@@ -60,3 +61,4 @@
     }
 }
 @end
+*/

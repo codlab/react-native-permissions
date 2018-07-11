@@ -11,7 +11,7 @@
 @implementation RCTConvert (RNPStatus)
 
 RCT_ENUM_CONVERTER(RNPType, (@{ @"location" : @(RNPTypeLocation),
-                                @"camera" : @(RNPTypeCamera),
+                                /*@"camera" : @(RNPTypeCamera),
                                 @"microphone" : @(RNPTypeMicrophone),
                                 @"photo" : @(RNPTypePhoto),
                                 @"contacts" : @(RNPTypeContacts),
@@ -22,7 +22,7 @@ RCT_ENUM_CONVERTER(RNPType, (@{ @"location" : @(RNPTypeLocation),
                                 @"backgroundRefresh": @(RNPTypeBackgroundRefresh),
                                 @"speechRecognition": @(RNPTypeSpeechRecognition),
                                 @"mediaLibrary": @(RNPTypeMediaLibrary),
-                                @"motion": @(RNPTypeMotion)
+                                @"motion": @(RNPTypeMotion)*/
                                 }),
                                 RNPTypeUnknown, integerValue)
 

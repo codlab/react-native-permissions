@@ -1,5 +1,12 @@
 # ☝🏼 React Native Permissions
 
+
+**Warning : This fork is ONLY here to use the location support**
+
+**In a future release, it will try to restore all the others location but does not want to use the iOS "list of the death" Usage descriptors /!\**
+
+**Apps should not use libraries/add permissions they do NOT need !**
+
 [![npm version](https://badge.fury.io/js/react-native-permissions.svg)](https://badge.fury.io/js/react-native-permissions)
 [![npm](https://img.shields.io/npm/dt/react-native-permissions.svg)](https://www.npmjs.org/package/react-native-permissions)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg)

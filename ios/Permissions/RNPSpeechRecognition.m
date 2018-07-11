@@ -1,3 +1,4 @@
+/*
 //
 //  RNPSpeechRecognition.m
 //  ReactNativePermissions
@@ -42,3 +43,4 @@
 }
 
 @end
+*/

@@ -1,3 +1,4 @@
+/*
 //
 //  RNPAudioVideo.h
 //  ReactNativePermissions
@@ -15,3 +16,4 @@
 + (void)request:(NSString *)type completionHandler:(void (^)(NSString *))completionHandler;
 
 @end
+*/

@@ -23,7 +23,7 @@ static NSString* RNPStatusRestricted = @"restricted";
 typedef NS_ENUM(NSInteger, RNPType) {
     RNPTypeUnknown,
     RNPTypeLocation,
-    RNPTypeCamera,
+    /*RNPTypeCamera,
     RNPTypeMicrophone,
     RNPTypePhoto,
     RNPTypeContacts,
@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, RNPType) {
     RNPTypeBackgroundRefresh,
     RNPTypeSpeechRecognition,
     RNPTypeMediaLibrary,
-    RNPTypeMotion
+    RNPTypeMotion*/
 };
 
 @interface RCTConvert (RNPStatus)
